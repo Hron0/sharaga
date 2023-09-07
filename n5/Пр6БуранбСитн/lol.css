@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 2rem;
+    margin-bottom: 5vh
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+nav a{
+    text-decoration: none;
+}
+th{
+    border: 1.5px solid rgba(0, 0, 0, 0.582);
+    width: 30px;
+    height: 30px;
+}
