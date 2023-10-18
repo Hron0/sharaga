@@ -38,6 +38,7 @@ h2 {
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    margin-right: 13px;
 }
 
 .radio_box input {
