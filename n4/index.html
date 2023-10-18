@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form action="" type="submit" class="container">
+        <h2>Фамилия</h2>
+        <input class="grid_left" />
+        <!--  -->
+        <h2>Инициалы</h2>
+        <input class="grid_left" />
+        <!--  -->
+        <h2>Пароль</h2>
+        <input class="grid_left" type="password" />
+        <!--  -->
+        <h2>Адрес получателя</h2>
+        <input class="grid_left" />
+        <!--  -->
+        <h2>Количество</h2>
+        <input class="grid_left" type="number" />
+        <!--  -->
+        <h2>Тип</h2>
+        <div class="options grid_left">
+            <select>
+                <option value="volvo">Куриные</option>
+                <option value="saab">Ещё</option>
+                <option value="opel">Какие</option>
+            </select>
+            <select>
+                <option value="volvo">Отборные</option>
+                <option value="saab">Лол</option>
+                <option value="opel">Хд</option>
+            </select>
+        </div>
+        <!--  -->
+        <h2>Доставка</h2>
+        <div class="radio_container grid_left">
+            <div class="radio_box">
+                <input type="radio" value="HTML">
+                <label for="">Почтой</label>
+            </div>
+            <div class="radio_box">
+                <input type="radio" value="HTML">
+                <label for="">Электронно</label>
+            </div>
+            <div class="radio_box">
+                <input type="radio" value="HTML">
+                <label for="">Курьером</label>
+            </div>
+        </div>
+        <!--  -->
+        <h2>Требуется накладная</h2>
+        <input class="grid_left checkbox" type="checkbox" />
+        <!--  -->
+        <h2>Дополнительная информация</h2>
+        <textarea class="grid_left info"></textarea>
+        <!--  -->
+        <button>Заказать</button>
+        <button class="grid_left">Отменить</button>
+    </form>
+</body>
+
+</html>
