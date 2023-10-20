@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Share Tech Mono', monospace !important;
+    font-family: 'Share Tech Mono', monospace;
+    font-style: normal;
+    font-weight: 800;
+}
+
+body {
+    background-color: rgb(29, 27, 27);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navbar-collapse {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand:hover, .navbar-nav li a:hover{
+    text-decoration: dashed;
+    color: red;
+    transition: 0.5s linear;
+}
+
+.navbar a {
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+
+.navbar {
+    position: static;
+    top: 0px;
+    width: 100%;
+    background-color: #00000046 !important;
+}
+
+.dropdown-menu {
+    background-color: #05080a41 !important;
+}
+
+.dropdown-toggle {
+    border: 1px solid red;
+    background-color: transparent;
+    font-size: 1.3rem;
+}
+
+.dropdown-menu li a {
+    text-transform: uppercase;
+    font-size: 1.3rem !important;
+}
+
+.main_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    color: whitesmoke !important;
+}
+h2 {
+    color: whitesmoke !important;
+}
+
+p {
+    color: whitesmoke !important;
+}
+
+.main_img img {
+    width: 50%;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ratings img {
+    width: 20%;
+}
+
+.vids_cont {
+    position: relative;
+    width: 100% !important;
+}
+
+.vid_info_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.vid {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.vid_wrapper{
+    width: 40%;
+    aspect-ratio: 12/8;
+    top: 10%;
+    right: 5%;
+    background-color: #b1b1b1;
+    padding: 1rem;
+    z-index: 9;
+    position: absolute;
+    display: flex;
+    place-content: center;
+    background-color: rgba(0,0,0,.7); 
+}
+
+.vid_sect_content {
+    padding: 1rem;
+    background: linear-gradient(90deg, #635c61 0.125rem, transparent 0) 0 0, linear-gradient(90deg, #635c61 0.125rem, transparent 0) 0 100%, linear-gradient(270deg, #635c61 0.125rem, transparent 0) 100% 0, linear-gradient(270deg, #635c61 0.125rem, transparent 0) 100% 100%, linear-gradient(180deg, #635c61 0.125rem, transparent 0) 0 0, linear-gradient(180deg, #635c61 0.125rem, transparent 0) 100% 0, linear-gradient(0deg, #635c61 0.125rem, transparent 0) 0 100%, linear-gradient(0deg, #635c61 0.125rem, transparent 0) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 0.8rem 0.8rem;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.modal-content{
+    background-color: #332830;
+}
+
+.forma{
+    display: flex;
+    flex-direction: column;
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.email input{
+    height: 30px;
+    border: 1px solid red;
+    background-color: #272626;
+    padding: 5px 7px;
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+
+.buy{
+    align-self: center;
+}
+
+.buy h1 a{
+    cursor: pointer !important;
+}
+.buy h1 a:hover{
+    color: red !important;
+    transition: 0.5s linear;
+}
