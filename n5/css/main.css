@@ -35,12 +35,12 @@ a{
 }
 
 a:hover{
-    color: brown;
+    color: rgb(171, 20, 20);
     text-decoration: underline;
 }
 
 a:visited{
-    color: violet;
+    color: rgb(111, 57, 111);
 }
 
 a:active{
