@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600;800&family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
+:root {
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 30px;
+}
+
+body {
+    background-color: rgb(65, 62, 62);
+}
+
+p{
+    text-align: center;
+    padding-left: 10px;
+        color: antiquewhite;
+}
+
+p::first-letter{
+   font-size: 3.5rem; 
+   color: rgb(134, 186, 255);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(228, 192, 34);
+    transition: 0.5s linear;
+}
+
+a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: violet;
+}
+
+a:active{
+    color: rgb(255, 255, 255);
+}
