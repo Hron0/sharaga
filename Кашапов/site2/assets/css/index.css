@@ -32,6 +32,8 @@ body{
     gap: 30px;
 }
 
+/* TODO:ADD MEDIA TO HEADER */
+
 .navbar{
     padding: 8px 5% 8px 3%;
     position: absolute;
