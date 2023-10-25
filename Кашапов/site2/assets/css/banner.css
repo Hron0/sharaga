@@ -91,4 +91,5 @@
     line-height: var(--web-button-lg-line-height);
     white-space: nowrap;
     font-style: var(--web-button-lg-font-style);
+    text-decoration: none;
 }

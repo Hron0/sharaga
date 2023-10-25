@@ -56,6 +56,13 @@ body{
     margin-top: 100px;
     width: 100vw;
 }
+.info_text{
+    display: flex;
+    flex-direction: column;
+}
+.info_text a{
+    padding-top: 1rem;
+}
 .info_text h6{
     font-size: 4.5rem;
 }

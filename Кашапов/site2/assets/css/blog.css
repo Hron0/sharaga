@@ -131,6 +131,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     align-self: stretch;
     width: 100%;
@@ -139,7 +140,7 @@
 
 .frame_blog .date {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 2px;
     position: relative;
     flex: 1;
@@ -202,6 +203,7 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     font-style: var(--web-h5-font-style);
+    text-decoration: none;
 }
 
 .frame_blog .description {
@@ -312,7 +314,7 @@
 
 .frame_blog .date-2 {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
     padding: 0px 16px 0px 0px;
     position: relative;
