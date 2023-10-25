@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600;800&family=Share+Tech&family=Share+Tech+Mono&display=swap');
-:root{
+
+:root {
     --orang: #F45E0C;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -11,7 +13,7 @@
     color: white;
 }
 
-body{
+body {
     background-color: rgb(43 48 53);
     position: relative;
     display: flex;
@@ -24,72 +26,119 @@ body{
     overflow-x: hidden;
 }
 
-.navbar-nav{
+.body_class{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index_wrapper{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11vh;
+}
+
+.navbar-nav {
     gap: 20px;
 }
 
-.container-fluid{
-    gap: 30px;
-}
 
-/* TODO:ADD MEDIA TO HEADER */
 
-.navbar{
+
+.navbar {
     padding: 8px 5% 8px 3%;
-    position: absolute;
     top: 1px;
-    width: 100vw;
+    width: 100%;
     border-style: solid;
     border-width: 0px 2px 2px 2px;
     border-color: rgb(93, 98, 103);
 }
 
-.nav-link{
+.nav-link {
     color: white;
+    font-size: 1.6rem;
 }
 
-.info_container{
+.info_container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 100px;
-    width: 100vw;
+    width: 100%;
 }
-.info_text{
+
+.info_text {
     display: flex;
     flex-direction: column;
 }
-.info_text a{
+
+.info_text a {
     padding-top: 1rem;
 }
-.info_text h6{
+
+.info_text h6 {
     font-size: 4.5rem;
 }
-.info_text h5{
+
+.info_text h5 {
     font-size: 2.5rem;
 }
-.info_text .orange_lol{
+
+.info_text .orange_lol {
     color: var(--orang);
     text-decoration: none;
 }
-.info_text button{
+
+.info_text button {
     font-size: 1.5rem;
     background-color: var(--orang);
     color: white;
     transition: 0.5s linear;
 }
-.info_text button:hover{
+
+.info_text button:hover {
     background-color: #fc762e;
     box-shadow: -4px -5px 8px 3px rgba(168, 110, 234, 0.2);
 }
-.info_img img{
+
+.info_img img {
     width: 45rem;
     height: 27rem;
 }
 
-@media screen and (min-width: 998px) {
-    .info_container{
+
+@media screen and (min-width: 898px) {
+    .container-fluid {
+        gap: 30px;
+    }
+    .body_class{
+        width: 100vw;
+        gap: 2vh;
+    }
+        .info_container {
         padding: 0px 150px;
+    }
+}
+@media screen and (min-width: 1901px) {
+    .container-fluid {
+        gap: 60px;
+    }
+    .index_wrapper{
+        gap: 2vh;
+    }
+    .body_class{
+        width: 85%;
+        gap: 2vh;
+    }
+    .info_container {
+        padding: 0px 50px;
     }
 }

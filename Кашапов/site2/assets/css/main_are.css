@@ -1,0 +1,67 @@
+.main_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+.sorting{
+    display: flex;
+    flex-direction: column;
+    border-right: 2.7px solid rgba(178, 169, 202, 0.312);
+    height: 100%;
+    width: 200px;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    padding: 10px 1px 10px 5px;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: 2.7px solid rgba(178, 169, 202, 0.312);
+}
+
+.filters button{
+    background-color: transparent;
+    border: none;
+    color: blue;
+    padding: 0px;
+}
+
+.filters h6{
+    color: black;
+}
+
+.accordion{
+    padding-top: 10px;
+    position: relative;
+}
+
+.accordion-item{
+    width: 97%;
+}
+
+.accordion-body{
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-check-label{
+    color: black;
+}
+
+.products_area{
+    height: 100%;
+    width: calc(100% - 200px);
+    padding: 20px 5px 20px 5px;
+}
+
+.row{
+    margin-bottom: 50px;
+}

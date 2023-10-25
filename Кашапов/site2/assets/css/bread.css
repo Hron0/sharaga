@@ -1,0 +1,69 @@
+.breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.breadcrumb_wrapper{
+    width: 100%;
+    padding-left: 50px;
+}
+
+.breadcrumb .breadcrumbs-elements {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.breadcrumb .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--web-body-lg-font-family);
+    font-weight: var(--web-body-lg-font-weight);
+    color: var(--neutralgray-717171);
+    font-size: var(--web-body-lg-font-size);
+    text-align: center;
+    letter-spacing: var(--web-body-lg-letter-spacing);
+    line-height: var(--web-body-lg-line-height);
+    font-style: var(--web-body-lg-font-style);
+}
+
+.breadcrumb .vuesax-outline-arrow {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.breadcrumb .home-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0px;
+    position: relative;
+    flex: 0 0 auto;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: var(--primary);
+}
+
+.breadcrumb .home {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--web-body-lg-font-family);
+    font-weight: var(--web-body-lg-font-weight);
+    color: var(--primary);
+    font-size: var(--web-body-lg-font-size);
+    text-align: center;
+    letter-spacing: var(--web-body-lg-letter-spacing);
+    line-height: var(--web-body-lg-line-height);
+    font-style: var(--web-body-lg-font-style);
+    text-decoration: none;
+}

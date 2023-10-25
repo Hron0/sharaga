@@ -12,53 +12,917 @@
     <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/stylegyuide.css">
+    <link rel="stylesheet" href="../assets/css/bread.css">
+    <link rel="stylesheet" href="../assets/css/main_are.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
 </head>
 
-<body class="body_class">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">E-Shop</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Catalog
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./pages/shop.html">See All</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./pages/shop.html">Phones</a></li>
-                            <li><a class="dropdown-item" href="./pages/shop.html">PC</a></li>
-                            <li><a class="dropdown-item" href="./pages/shop.html">Cameras</a></li>
-                            <li><a class="dropdown-item" href="./pages/shop.html">Watches</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./pages/shop.html">Components</a></li>
-                            <li><a class="dropdown-item" href="./pages/shop.html">Accesories</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+<body>
+    <div class="body_class">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">E-Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Catalog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/shop.html">See All</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/shop.html">Phones</a></li>
+                                <li><a class="dropdown-item" href="./pages/shop.html">PC</a></li>
+                                <li><a class="dropdown-item" href="./pages/shop.html">Cameras</a></li>
+                                <li><a class="dropdown-item" href="./pages/shop.html">Watches</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/shop.html">Components</a></li>
+                                <li><a class="dropdown-item" href="./pages/shop.html">Accesories</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="breadcrumb_wrapper">
+            <div class="breadcrumb">
+                <div class="breadcrumbs-elements">
+                    <div class="text-wrapper">Home</div>
+                </div>
+                <img class="vuesax-outline-arrow" src="../assets/images/blogs/arrow-circle-right.svg" />
+                <div class="home-wrapper">
+                    <a href="./shop.html" class="home">Products</a>
+                </div>
             </div>
         </div>
-    </nav>
 
+
+        <!-- MAIN AREA -->
+        <div class="main_wrapper">
+            <div class="sorting">
+                <div class="filters">
+                    <h6>Filsters</h6>
+                    <button>Clear All</button>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Brand
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Acer
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        ASUS
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Apple
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Dell
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                RAM
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        32 GB
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        16 GB
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        12 GB
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        8 GB
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Screen Size
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        13" - 13.9
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        14" - 14.9
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        15" - 15.9
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        16" - 16.9
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Processor
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Intel Core i5
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Intel Core i7
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Intel Core i9
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        AMD Ryzen 9
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                GPU Brand
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        NVIDIA
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Intel
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        AMD
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Apple
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Drive Size
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        512 GB
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        64 GB
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        1 TB
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        3 TB
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div class="products_area container text-center">
+                <div class="row">
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15&#34; w/ Touch ID (2023) - Space Grey (Apple M2 Chip / 256GB SSD /
+                                8GB
+                                RAM) - French
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2410.87</div>
+                                        <div class="new-price">$ 1990,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image2.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2510.87</div>
+                                        <div class="new-price">$ 2090,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.9</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image3.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2710.87</div>
+                                        <div class="new-price">$ 2190,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.8</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/imag4.png" />
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2710.87</div>
+                                        <div class="new-price">$ 2190,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.8</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15&#34; w/ Touch ID (2023) - Space Grey (Apple M2 Chip / 256GB SSD /
+                                8GB
+                                RAM) - French
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2410.87</div>
+                                        <div class="new-price">$ 1990,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image2.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2510.87</div>
+                                        <div class="new-price">$ 2090,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.9</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image3.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2710.87</div>
+                                        <div class="new-price">$ 2190,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.8</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/imag4.png" />
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2710.87</div>
+                                        <div class="new-price">$ 2190,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.8</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15&#34; w/ Touch ID (2023) - Space Grey (Apple M2 Chip / 256GB SSD /
+                                8GB
+                                RAM) - French
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2410.87</div>
+                                        <div class="new-price">$ 1990,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image2.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2510.87</div>
+                                        <div class="new-price">$ 2090,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.9</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image3.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2710.87</div>
+                                        <div class="new-price">$ 2190,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.8</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/imag4.png" />
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2710.87</div>
+                                        <div class="new-price">$ 2190,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.8</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15&#34; w/ Touch ID (2023) - Space Grey (Apple M2 Chip / 256GB SSD /
+                                8GB
+                                RAM) - French
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2410.87</div>
+                                        <div class="new-price">$ 1990,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image2.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2510.87</div>
+                                        <div class="new-price">$ 2090,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.9</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/image3.png" />
+
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2710.87</div>
+                                        <div class="new-price">$ 2190,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.8</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card col">
+                        <div class="image">
+                            <img class="img" src="../assets/images/products/imag4.png" />
+                        </div>
+                        <img class="line" src="../assets/images/products/Line 3.svg" />
+                        <div class="info">
+                            <p class="title">
+                                Apple MacBook Air 15"
+                            </p>
+                            <div class="price-rate">
+                                <div class="price">
+                                    <div class="frame">
+                                        <div class="last-price">$2710.87</div>
+                                        <div class="new-price">$ 2190,87</div>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="frame-2">
+                                        <img class="star" src="../assets/images/products/star.svg" />
+                                        <div class="element">4.8</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount">
+                            <div class="discount-amount">-12%</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="overlap">
+                <div class="policy">
+                    <div class="techheim">
+                        <img class="img" src="../assets/images/footer/copyright.png" />
+                        <div class="text-wrapper">2023 Tech Heim.</div>
+                    </div>
+                    <div class="navbarfoo">
+                        <div class="div">cookie settings</div>
+                        <div class="div">Privacy Policy</div>
+                        <div class="div">Terms and Conditions</div>
+                        <div class="div">Imprint</div>
+                    </div>
+                </div>
+                <div class="main-footer">
+                    <div class="info">
+
+                        <div class="overlap-group-2">
+
+                            <div class="company">
+                                <div class="company_wrapper">
+                                    <div class="text-wrapper-5">Company</div>
+                                    <div class="text-wrapper-4">about us</div>
+                                    <div class="text-wrapper-4">blog</div>
+                                    <div class="text-wrapper-4">returns</div>
+                                    <div class="text-wrapper-4">order status</div>
+                                </div>
+                                <img class="partners" src="../assets/images/footer/partners.png" />
+                            </div>
+
+                            <div class="info-2">
+                                <div class="text-wrapper-5">Info</div>
+                                <div class="text-wrapper-4">How it works?</div>
+                                <div class="text-wrapper-4">our promises</div>
+                                <div class="text-wrapper-4">FAQ</div>
+                            </div>
+
+
+                            <div class="contact-us">
+                                <div class="text-wrapper-2">Contact us</div>
+                                <div class="div-2">
+                                    <img class="img-2" src="../assets/images/footer/location.svg" />
+                                    <div class="text-wrapper-3">123 Main Street, Anytown,USA</div>
+                                </div>
+                                <div class="phone">
+                                    <img class="img-2" src="../assets/images/footer/call-calling.svg" />
+                                    <div class="text-wrapper-4">+1 (555) 123-4567</div>
+                                </div>
+                                <div class="div-2">
+                                    <img class="img-2" src="../assets/images/footer/sms-edit.svg" />
+                                    <div class="text-wrapper-3">TechHeimSupport@gmail.com</div>
+                                </div>
+                            </div>
+
+                            <div class="input_thing">
+
+                                <div class="updates">
+                                    <p class="p">Sign up for News and updates</p>
+                                </div>
+
+                                <div class="input">
+                                    <div class="label-icon">
+                                        <div class="input_label_wrapper">
+                                            <img class="img" src="../assets/images/footer/user.svg" />
+                                            <div class="label">
+                                                <div class="label-2">E-mail Address</div>
+                                            </div>
+                                        </div>
+                                        <img class="vuesax-outline-arrow"
+                                            src="../assets/images/footer/arrow-right.svg" />
+                                    </div>
+
+                                </div>
+
+
+                                <div class="frame">
+                                    <img class="img-3" src="../assets/images/footer/Facebook.svg" />
+                                    <img class="img-3" src="../assets/images/footer/twitter.svg" />
+                                    <div class="img-3"><img class="instagram"
+                                            src="../assets/images/footer/instagram.png" />
+                                    </div>
+                                    <img class="img-3" src="../assets/images/footer/Youtube.svg" />
+                                </div>
+
+                            </div>
+
+                            <div class="footer_btn">
+                                <div class="back-to-up-bottun">
+                                    <img class="img" src="../assets/images/footer/message-question.svg" />
+                                </div>
+                                <div class="back-to-up-bottun">
+                                    <img class="vuesax-outline-arrow-2"
+                                        src="../assets/images/footer/arrow-circle-up.svg" />
+                                </div>
+                            </div>
+                        </div>
+                        <img class="ellipse" src="../assets/images/footer/ellipse.png" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
