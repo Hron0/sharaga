@@ -1,0 +1,334 @@
+.frame_blog {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    position: relative;
+}
+
+.frame_blog .div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.frame_blog .div-2 {
+    display: flex;
+    width: 1220px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.frame_blog .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    width: 14%;
+    color: white;
+    font-size: var(--web-h3-font-size);
+    letter-spacing: var(--web-h3-letter-spacing);
+    line-height: var(--web-h3-line-height);
+    font-style: var(--web-h3-font-style);
+}
+
+.frame_blog .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    all: unset;
+    padding: 5px 8px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.2s linear;
+}
+
+.frame_blog .button .add-to-cart{
+    color: black;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+.frame_blog .button:hover{
+    font-size: calc(var(--web-button-lg-font-size) + 3px);
+    padding: 7px 10px;
+    box-shadow: -4px -5px 8px 3px rgba(168, 110, 234, 0.2);
+}
+
+.frame_blog .add-to-cart {
+    position: relative;
+    width: fit-content;
+    font-size: var(--web-button-lg-font-size);
+    text-align: center;
+    letter-spacing: var(--web-button-lg-letter-spacing);
+    line-height: var(--web-button-lg-line-height);
+    white-space: nowrap;
+    font-style: var(--web-button-lg-font-style);
+}
+
+.frame_blog .vuesax-outline-arrow {
+    position: relative;
+    color: black;
+    width: 24px;
+    height: 24px;
+}
+
+.frame_blog .line {
+    position: relative;
+    width: 1224px;
+    height: 3px;
+}
+
+.frame_blog .div-3 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.frame_blog .blog-card {
+    display: flex;
+    flex-direction: column;
+    width: 392px;
+    height: 336px;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+}
+
+.frame_blog .image {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.frame_blog .info {
+    display: flex;
+    flex-direction: column;
+    height: 124px;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0px 16px 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.frame_blog .date-time {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.frame_blog .date {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.frame_blog .img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.frame_blog .p {
+    position: relative;
+    flex: 1;
+    font-family: var(--web-body-xs-font-family);
+    font-weight: var(--web-body-xs-font-weight);
+    color: var(--neutralgray-9e9e9e);
+    font-size: var(--web-body-xs-font-size);
+    letter-spacing: var(--web-body-xs-letter-spacing);
+    line-height: var(--web-body-xs-line-height);
+    font-style: var(--web-body-xs-font-style);
+}
+
+.frame_blog .time {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 2px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.frame_blog .element-min-read {
+    position: relative;
+    width: fit-content;
+    font-family: var(--web-body-xs-font-family);
+    font-weight: var(--web-body-xs-font-weight);
+    color: var(--neutralgray-717171);
+    font-size: var(--web-body-xs-font-size);
+    text-align: right;
+    letter-spacing: var(--web-body-xs-letter-spacing);
+    line-height: var(--web-body-xs-line-height);
+    font-style: var(--web-body-xs-font-style);
+}
+
+.frame_blog .title {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--web-h5-font-family);
+    font-weight: var(--web-h5-font-weight);
+    color: var(--black);
+    font-size: var(--web-h5-font-size);
+    letter-spacing: var(--web-h5-letter-spacing);
+    line-height: var(--web-h5-line-height);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-style: var(--web-h5-font-style);
+}
+
+.frame_blog .description {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    font-family: var(--web-body-md-font-family);
+    font-weight: var(--web-body-md-font-weight);
+    color: var(--black);
+    font-size: var(--web-body-md-font-size);
+    letter-spacing: var(--web-body-md-letter-spacing);
+    line-height: var(--web-body-md-line-height);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-style: var(--web-body-md-font-style);
+}
+
+.frame_blog .div-4 {
+    display: inline-flex;
+    flex-direction: column;
+    height: 336px;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.frame_blog .blog-card-2 {
+    display: flex;
+    width: 808px;
+    height: 156px;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+}
+
+.frame_blog .blog-image {
+    position: relative;
+    align-self: stretch;
+    width: 240px;
+    object-fit: cover;
+}
+
+.frame_blog .info-2 {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 12px 0px 0px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.frame_blog .div-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.frame_blog .title-2 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--web-h6-font-family);
+    font-weight: var(--web-h6-font-weight);
+    color: var(--black);
+    font-size: var(--web-h6-font-size);
+    letter-spacing: var(--web-h6-letter-spacing);
+    line-height: var(--web-h6-line-height);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-style: var(--web-h6-font-style);
+}
+
+.frame_blog .description-2 {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--web-body-sm-font-family);
+    font-weight: var(--web-body-sm-font-weight);
+    color: var(--neutralgray-717171);
+    font-size: var(--web-body-sm-font-size);
+    letter-spacing: var(--web-body-sm-letter-spacing);
+    line-height: var(--web-body-sm-line-height);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-style: var(--web-body-sm-font-style);
+}
+
+.frame_blog .date-2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 16px 0px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.frame_blog .info-3 {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 12px 0px 0px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}

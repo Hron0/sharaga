@@ -1,0 +1,94 @@
+.banner {
+    position: relative;
+    width: 1224px;
+    height: 420px;
+    background-color: #223949;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.banner .overlap-group {
+    position: absolute;
+    width: 1044px;
+    height: 655px;
+    top: -89px;
+    left: 552px;
+}
+
+.banner .ellipse {
+    position: absolute;
+    width: 800px;
+    height: 655px;
+    top: 0;
+    left: 244px;
+    background-color: #ff6951;
+    border-radius: 400px/327.5px;
+}
+
+.banner .frame {
+    position: absolute;
+    width: 500px;
+    height: 338px;
+    top: 130px;
+    left: 0;
+}
+
+.banner .div {
+    position: absolute;
+    width: 327px;
+    height: 165px;
+    top: 128px;
+    left: 64px;
+}
+
+.banner .text-wrapper {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: var(--web-h1-font-family);
+    font-weight: var(--web-h1-font-weight);
+    color: #ffffff;
+    font-size: var(--web-h1-font-size);
+    letter-spacing: var(--web-h1-letter-spacing);
+    line-height: var(--web-h1-line-height);
+    font-style: var(--web-h1-font-style);
+}
+
+.banner .text-wrapper-2 {
+    position: absolute;
+    top: 68px;
+    left: 8px;
+    font-family: "Inter-Light", Helvetica;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.banner .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    position: absolute;
+    top: 130px;
+    left: 129px;
+    background-color: #ff6951;
+    border-radius: 8px;
+}
+
+.banner .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--web-button-lg-font-family);
+    font-weight: var(--web-button-lg-font-weight);
+    color: #223949;
+    font-size: var(--web-button-lg-font-size);
+    text-align: center;
+    letter-spacing: var(--web-button-lg-letter-spacing);
+    line-height: var(--web-button-lg-line-height);
+    white-space: nowrap;
+    font-style: var(--web-button-lg-font-style);
+}
