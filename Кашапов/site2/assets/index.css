@@ -72,3 +72,8 @@ body{
     height: 27rem;
 }
 
+@media screen and (min-width: 998px) {
+    .info_container{
+        padding: 0px 150px;
+    }
+}
