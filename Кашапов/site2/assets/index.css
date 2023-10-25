@@ -17,9 +17,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 11vh;
     width: 100vw;
     min-height: 100vh;
+    padding: 0px 120px;
+    margin-bottom: 50px;
+    overflow-x: hidden;
 }
 
 .navbar-nav{
@@ -56,6 +59,10 @@ body{
 }
 .info_text h5{
     font-size: 2.5rem;
+}
+.info_text .orange_lol{
+    color: var(--orang);
+    text-decoration: none;
 }
 .info_text button{
     font-size: 1.5rem;
