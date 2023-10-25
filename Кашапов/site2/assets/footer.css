@@ -1,0 +1,376 @@
+.footer {
+    width: 100svw;
+    height: 347px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.footer .overlap {
+    width: 100%;
+    height: 353px;
+    z-index: 120;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.footer .policy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 35%;
+    width: 100vw;
+    height: 64px;
+    background-color: var(--primaryprimary-900);
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-color: var(--primaryprimary-900);
+}
+
+.footer .techheim {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.footer .img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer .text-wrapper {
+    width: fit-content;
+    font-family: var(--mobile-caption-font-family);
+    font-weight: var(--mobile-caption-font-weight);
+    font-size: var(--mobile-caption-font-size);
+    line-height: var(--mobile-caption-line-height);
+    position: relative;
+    color: var(--neutralgray-cbcbcb);
+    letter-spacing: var(--mobile-caption-letter-spacing);
+    font-style: var(--mobile-caption-font-style);
+}
+
+.footer .navbarfoo {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.footer .div {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--web-caption-md-font-family);
+    font-weight: var(--web-caption-md-font-weight);
+    color: var(--neutralgray-cbcbcb);
+    font-size: var(--web-caption-md-font-size);
+    letter-spacing: var(--web-caption-md-letter-spacing);
+    line-height: var(--web-caption-md-line-height);
+    font-style: var(--web-caption-md-font-style);
+}
+
+.footer .main-footer {
+    position: relative;
+    width: 100vw;
+    height: 293px;
+    background-color: var(--primaryprimary-900);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .overlap-group {
+    position: relative;
+    width: 1224px;
+    height: 277px;
+    top: 12px;
+    left: 108px;
+}
+
+.footer .info {
+    width: 90%;
+    height: 277px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.footer .overlap-group-2 {
+    width: 1224px;
+    height: 241px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 25px;
+}
+
+.footer .contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 278px;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0px 2px;
+}
+
+.footer .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--web-h6-font-family);
+    font-weight: var(--web-h6-font-weight);
+    color: #ffffff;
+    font-size: var(--web-h6-font-size);
+    letter-spacing: var(--web-h6-letter-spacing);
+    line-height: var(--web-h6-line-height);
+    white-space: nowrap;
+    font-style: var(--web-h6-font-style);
+}
+
+.footer .div-2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.footer .img-2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.footer .text-wrapper-3 {
+    flex: 1;
+    margin-top: -1px;
+    font-family: var(--web-body-md-font-family);
+    font-weight: var(--web-body-md-font-weight);
+    font-size: var(--web-body-md-font-size);
+    line-height: var(--web-body-md-line-height);
+    position: relative;
+    color: var(--neutralgray-cbcbcb);
+    letter-spacing: var(--web-body-md-letter-spacing);
+    font-style: var(--web-body-md-font-style);
+}
+
+.footer .phone {
+    display: flex;
+    height: 29px;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.footer .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    font-family: var(--web-body-md-font-family);
+    font-weight: var(--web-body-md-font-weight);
+    color: var(--neutralgray-cbcbcb);
+    font-size: var(--web-body-md-font-size);
+    letter-spacing: var(--web-body-md-letter-spacing);
+    line-height: var(--web-body-md-line-height);
+    white-space: nowrap;
+    font-style: var(--web-body-md-font-style);
+}
+
+.footer .info-2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    padding: 0px 2px;
+}
+
+.footer .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--web-h6-font-family);
+    font-weight: var(--web-h6-font-weight);
+    color: var(--white);
+    font-size: var(--web-h6-font-size);
+    letter-spacing: var(--web-h6-letter-spacing);
+    line-height: var(--web-h6-line-height);
+    white-space: nowrap;
+    font-style: var(--web-h6-font-style);
+}
+
+.footer .company {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 0px 2px;
+    height: 100%;
+    padding-bottom: 2%;
+}
+
+.footer .input {
+    width: 288px;
+    height: 48px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--neutralgray-f9f9f9);
+    display: flex;
+    align-items: center;
+}
+
+.input_thing {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+
+
+.label-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.footer .label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.footer .label-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--web-body-md-font-family);
+    font-weight: var(--web-body-md-font-weight);
+    color: var(--neutralgray-f9f9f9);
+    font-size: var(--web-body-md-font-size);
+    letter-spacing: var(--web-body-md-letter-spacing);
+    line-height: var(--web-body-md-line-height);
+    white-space: nowrap;
+    font-style: var(--web-body-md-font-style);
+}
+
+.footer .vuesax-outline-arrow {
+    width: 24px;
+    height: 24px;
+}
+
+.footer .back-to-up-bottun {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primaryprimary-50);
+    border-radius: 48px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer .vuesax-outline-arrow-2 {
+    width: 32px;
+    height: 32px;
+}
+
+.footer .partners {
+    width: 140px;
+    height: 24px;
+}
+
+.footer .frame {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footer .img-3 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.footer .instagram {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 3px;
+    left: 3px;
+}
+
+.footer .ellipse {
+    position: absolute;
+    width: 1171px;
+    height: 205px;
+    top: 36px;
+    left: 53px;
+}
+
+.footer .updates {
+    display: flex;
+    flex-direction: column;
+    width: 233px;
+    align-items: flex-start;
+    height: 20px;
+}
+
+.footer .p {
+    position: relative;
+    width: 291px;
+    margin-top: -1px;
+    margin-right: -62px;
+    font-family: var(--web-h6-font-family);
+    font-weight: var(--web-h6-font-weight);
+    color: var(--white);
+    font-size: var(--web-h6-font-size);
+    letter-spacing: var(--web-h6-letter-spacing);
+    line-height: var(--web-h6-line-height);
+    font-style: var(--web-h6-font-style);
+}
+
+.footer .online-chat {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 8px;
+    background-color: var(--primaryprimary-50);
+    border-radius: 48px;
+}
+
+.company_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 2%;
+}

@@ -1,0 +1,40 @@
+.brand_frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: azure;
+    border-radius: 15px;
+}
+
+.brand_frame .div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+    width: 1224px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.brand_frame .div-2 {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 1224px;
+    position: relative;
+    flex: 0 0 auto;
+    padding: 7px 12px 0px 7px;
+}
+
+.brand_frame .div .div-2 .text-wrapper{
+    color: black;
+    font-size: 3rem;
+}
+
+.brand_frame .top-brands{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}

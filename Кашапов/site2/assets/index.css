@@ -21,7 +21,6 @@ body{
     width: 100vw;
     min-height: 100vh;
     padding: 0px 120px;
-    margin-bottom: 50px;
     overflow-x: hidden;
 }
 
@@ -35,7 +34,8 @@ body{
 
 .navbar{
     padding: 8px 5% 8px 3%;
-    position: fixed;
+    position: absolute;
+    top: 1px;
     width: 100vw;
     border-style: solid;
     border-width: 0px 2px 2px 2px;
