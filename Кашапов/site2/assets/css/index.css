@@ -114,6 +114,21 @@ body {
     height: 27rem;
 }
 
+.partners_header{
+    font-size: 4rem;
+}
+
+.carousel-inner{
+    width: 300px;
+    height: 300px;
+}
+
+.carousel_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
 @media screen and (min-width: 898px) {
     .container-fluid {
@@ -132,7 +147,7 @@ body {
         gap: 60px;
     }
     .index_wrapper{
-        gap: 2vh;
+        gap: 4vh;
     }
     .body_class{
         width: 85%;
