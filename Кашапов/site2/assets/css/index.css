@@ -97,6 +97,14 @@ body {
     text-decoration: none;
 }
 
+.buy_now{
+    padding: 10px 55px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 .info_text button {
     font-size: 1.5rem;
     background-color: var(--orang);
