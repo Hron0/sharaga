@@ -97,6 +97,14 @@ body {
     text-decoration: none;
 }
 
+.buy_now{
+    padding: 10px 55px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 .info_text button {
     font-size: 1.5rem;
     background-color: var(--orang);
@@ -113,6 +121,28 @@ body {
     width: 45rem;
     height: 27rem;
 }
+
+.partners_header{
+    font-size: 4rem;
+}
+
+.text-wrapper{
+    text-decoration: none;
+}
+
+.carousel-inner{
+    width: 300px;
+    height: 300px;
+}
+
+.carousel_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 
 
 @media screen and (min-width: 898px) {
@@ -132,7 +162,7 @@ body {
         gap: 60px;
     }
     .index_wrapper{
-        gap: 2vh;
+        gap: 4vh;
     }
     .body_class{
         width: 85%;
