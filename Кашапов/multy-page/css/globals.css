@@ -3,6 +3,7 @@
 :root {
     font-family: 'Share Tech Mono', monospace !important;
     font-weight: 400 !important;
+    --main-nav: rgb(43 48 53);
 }
 
 body {
@@ -14,15 +15,20 @@ body {
     position: relative;
     display: flex;
     place-content: center;
+    background-color: rgb(85, 97, 110) !important;
 }
 
 .main_wrapper {
     width: 90%;
     height: 100%;
+    background-color: var(--main-nav);
+    border-left: 2px rgb(105, 100, 138) solid;
+    border-right: 2px rgb(105, 100, 138) solid;
 }
 
 .navbar {
     height: 5vh;
+    border-bottom: 2px rgb(105, 100, 138) solid;
 }
 
 
