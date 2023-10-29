@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600;800&family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
+:root {
+    font-family: 'Share Tech Mono', monospace !important;
+    font-weight: 400 !important;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    place-content: center;
+}
+
+.main_wrapper {
+    width: 90%;
+    height: 100%;
+}
+
+.navbar {
+    height: 5vh;
+}
+
+
+@media screen and (min-width: 898px) {
+    .navbar {
+        height: 7vh;
+    }
+
+    .main_wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1901px) {
+    .navbar {
+        height: 5vh;
+    }
+
+    .main_wrapper {
+        width: 87%;
+    }
+}
