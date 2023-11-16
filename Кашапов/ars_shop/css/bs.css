@@ -1,0 +1,36 @@
+.collapse {
+    justify-content: space-between !important;
+}
+
+.d-flex {
+    width: 30% !important;
+    margin-right: 30%;
+}
+
+.baskets {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 5%;
+}
+
+.navbar{
+    width: 100% !important;
+}
+
+.navbar .container-fluid .navbar-brand img {
+    width: 8rem;
+}
+
+.container-fluid {
+    background-color: #4e154b !important;
+}
+
+.bg-primary {
+    background-color: #4e154b !important;
+}
+
+.collapse ul li a {
+    font-size: 1.5rem !important;
+    color: white !important;
+}
