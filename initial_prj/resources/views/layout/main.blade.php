@@ -32,23 +32,23 @@
 
                 <div class="hidden md:block">
                     <nav aria-label="Global">
-                        <ul class="flex items-center gap-6 text-sm">
+                        <ul class="flex items-center gap-16 text-sm">
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
                                     href="{{route('home')}}">
                                     Главная
                                 </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
                                     href="{{route('welcome')}}">
                                     Laravel Welcome
                                 </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
                                     href="{{route('calc')}}">
                                     Калькулятор Кв. Ур
                                 </a>
