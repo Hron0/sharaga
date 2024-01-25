@@ -6,7 +6,14 @@ export default {
     "./resources/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'TechMono': ['"Share Tech Mono"', 'monospace'],
+        'TechReg': ['"Share Tech"', 'sans-serif'],
+        'Inter': ['"Inter"', 'sans-serif']
+      },
+    },
+
   },
   plugins: [],
 }
