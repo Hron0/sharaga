@@ -10,17 +10,14 @@
     <style>
         .dots {
             background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E")
-        }
-
-        ;
+        };
     </style>
 </head>
 
-<body class="bg-center h-screen w-screen bg-transparent overflow-x-hidden">
-    <div class="fixed w-screen h-screen z-0 dots bg-center bg-gray-900"></div>
+<body class="bg-center h-screen w-screen dots bg-gray-900 overflow-x-hidden flex flex-col gap-10">
 
     <header class="bg-white dark:bg-gray-900 z-10 relative">
-        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto w-screen px-4 sm:px-6 lg:px-52">
             <div class="flex h-16 items-center justify-between">
                 <div class="md:flex md:items-center md:gap-12">
                     <a class="block text-teal-600 dark:text-teal-600" href="/">
@@ -38,45 +35,25 @@
                         <ul class="flex items-center gap-6 text-sm">
                             <li>
                                 <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                    href="/">
-                                    About
+                                    href="{{route('home')}}">
+                                    Главная
                                 </a>
                             </li>
 
                             <li>
                                 <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                    href="/">
-                                    Careers
+                                    href="{{route('welcome')}}">
+                                    Laravel Welcome
                                 </a>
                             </li>
 
                             <li>
                                 <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                    href="/">
-                                    History
+                                    href="{{route('calc')}}">
+                                    Калькулятор Кв. Ур
                                 </a>
                             </li>
 
-                            <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                    href="/">
-                                    Services
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                    href="/">
-                                    Projects
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                    href="/">
-                                    Blog
-                                </a>
-                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -110,7 +87,7 @@
         </div>
     </header>
 
-    <div class="relative z-10">
+    <div class="relative z-10 mx-10 2xl:mx-16">
        @yield('body') 
     </div>
     

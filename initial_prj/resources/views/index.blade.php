@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Page Title')
+@section('title', 'Главная')
 
 @section('body')
     <h1 class="text-black">Welcome to my website!</h1>
