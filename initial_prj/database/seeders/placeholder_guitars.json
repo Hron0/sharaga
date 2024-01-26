@@ -17,7 +17,7 @@
         "name": "IBANEZ RGD71",
         "description": "7-string beast",
         "price": "157000",
-        "available": true,
+        "available": false,
         "image": "images/ibanez3.png"
     },
     {

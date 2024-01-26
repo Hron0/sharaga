@@ -14,7 +14,7 @@
                 </p>
             </header>
 
-            <form action="/shop" method="GET" class="mt-8 sm:flex sm:items-center sm:justify-between">
+            <form action="/shop" method="GET" id="products_form" class="mt-8 sm:flex sm:items-center sm:justify-between">
 
                 <div class="hidden sm:flex sm:gap-4">
                     <div class="relative"> {{-- Availability --}}
@@ -38,8 +38,8 @@
                                     <header class="flex items-center justify-between p-4">
                                         <span class="text-sm text-gray-700"> 0 Selected </span>
 
-                                        <button type="button" class="text-sm text-gray-900 underline underline-offset-4">
-                                            Reset
+                                        <button type="button" id="no_fltr" class="text-sm text-gray-900 underline underline-offset-4">
+                                            Все товары
                                         </button>
                                     </header>
 
@@ -131,7 +131,7 @@
                 <button type="submit" class="text-white px-4 py-3 bg-gray-300/20">Click</button>
             </form>
 
-            <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"> {{-- Products --}}
 
                 @foreach ($filteredProducts as $guitar)
                     <li>
@@ -167,5 +167,5 @@
         </div>
     </section>
 
-    <script src="{{ asset('js/shop123_checkboxes.js') }}"></script>
+    <script src="{{ asset('js/shop1_checkboxes.js') }}"></script>
 @endsection
