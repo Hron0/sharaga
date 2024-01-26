@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CalcController;
 use App\Http\Controllers\ExampleController;
-
+use App\Http\Controllers\ShopController;
+use App\Http\Controllers\BasketController;
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -17,3 +18,5 @@ Route::get('/calc', [CalcController::class, 'showCalc'])->name('calc');
 Route::post('/calc', [CalcController::class, 'calculate']);
 
 Route::get('/example', [ExampleController::class, 'showPage'])->name('example');
+Route::get('/example', [ShopController::class, 'showPage'])->name('shop');
+Route::get('/example', [BasketController::class, 'showPage'])->name('basket');

@@ -53,6 +53,18 @@
                                     Калькулятор Кв. Ур
                                 </a>
                             </li>
+                            <li>
+                                <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
+                                    href="{{route('shop')}}">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li>
+                                <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
+                                    href="{{route('basket')}}">
+                                    Корзина
+                                </a>
+                            </li>
 
                         </ul>
                     </nav>
