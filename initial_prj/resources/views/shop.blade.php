@@ -47,7 +47,7 @@
                                         <li>
                                             <label for="FilterInStock" class="inline-flex items-center gap-2">
                                                 <input type="checkbox" id="in_stock" name="in_stock" value="1"
-                                                    class="h-5 w-5 rounded border-gray-300" />
+                                                    class="h-5 w-5 rounded border-gray-300 out_stock" />
 
                                                 <span class="text-sm font-medium text-gray-700"> In Stock ({{$counts[0]}}) </span>
                                             </label>
@@ -55,8 +55,8 @@
 
                                         <li>
                                             <label for="FilterOutOfStock" class="inline-flex items-center gap-2">
-                                                <input type="checkbox" id="in_stock" name="in_stock" value="0"
-                                                    class="h-5 w-5 rounded border-gray-300" />
+                                                <input type="checkbox" id="out_stock" name="in_stock" value="0"
+                                                    class="h-5 w-5 rounded border-gray-300 out_stock" />
 
                                                 <span class="text-sm font-medium text-gray-700"> Out of Stock ({{$counts[1]}}) </span>
                                             </label>
@@ -167,5 +167,5 @@
         </div>
     </section>
 
-    <script src="../js/shop_checkboxes.js"></script>
+    <script src="{{ asset('js/shop123_checkboxes.js') }}"></script>
 @endsection
