@@ -6,9 +6,6 @@
 
     <section>
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-            @foreach ($filteredProducts as $guitar)
-                <p class="font-bold text-xl text-white">{{$guitar->price}}</p>
-            @endforeach
             <header>
                 <h2 class="text-xl font-TechReg font-bold text-gray-200 sm:text-3xl">Электро-гитары</h2>
 
@@ -49,7 +46,7 @@
                                     <ul class="space-y-1 border-t border-gray-200 p-4">
                                         <li>
                                             <label for="FilterInStock" class="inline-flex items-center gap-2">
-                                                <input type="checkbox" id="in_stock" name="in_stock"
+                                                <input type="checkbox" id="in_stock" name="in_stock" value="1"
                                                     class="h-5 w-5 rounded border-gray-300" />
 
                                                 <span class="text-sm font-medium text-gray-700"> In Stock ({{$counts[0]}}) </span>
@@ -58,7 +55,7 @@
 
                                         <li>
                                             <label for="FilterOutOfStock" class="inline-flex items-center gap-2">
-                                                <input type="checkbox" id="out_stock" name="out_stock"
+                                                <input type="checkbox" id="in_stock" name="in_stock" value="0"
                                                     class="h-5 w-5 rounded border-gray-300" />
 
                                                 <span class="text-sm font-medium text-gray-700"> Out of Stock ({{$counts[1]}}) </span>

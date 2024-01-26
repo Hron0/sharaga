@@ -31,16 +31,25 @@ class ShopController extends Controller
             Guitars::max('price'),
         ];
 
+
         if ($request->has('min_price') && $request->has('max_price')) {
-            $products->whereBetween('price', [$request->min_price, $request->max_price]);
+            if (!$request->input('min_price') == "" && !$request->input('max_price') == "") {
+                $products->whereBetween('price', [$request->min_price, $request->max_price]);
+            }
         }
 
-        /*         if ($request->has('price')) {
-            $products->where('price', '<=', $request->price);
+
+        if ($request->has('in_stock')) {
+            if ($request->input("in_stock") == 1) {
+                $products->where('available', $request->in_stock);
+            } elseif ($request->input("in_stock") == 0) {
+                $products->where('available', $request->in_stock);
+            } elseif ($request->input("in_stock") == 0 && $request->input("in_stock") == 1) {
+                return redirect()->back()->withInput(['except' => ["in_stock"]]);
+            }
+        } else {
+            $products->whereNotNull("available");
         }
-                if ($request->has('in_stock')) {
-            $products->where('available', $request->available);
-        } */
 
         $filteredProducts = $products->get();
 
