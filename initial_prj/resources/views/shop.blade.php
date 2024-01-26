@@ -6,6 +6,9 @@
 
     <section>
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+            @foreach ($filteredProducts as $guitar)
+                <p class="font-bold text-xl text-white">{{$guitar->price}}</p>
+            @endforeach
             <header>
                 <h2 class="text-xl font-TechReg font-bold text-gray-200 sm:text-3xl">Электро-гитары</h2>
 
@@ -14,7 +17,7 @@
                 </p>
             </header>
 
-            <div class="mt-8 sm:flex sm:items-center sm:justify-between">
+            <form action="/shop" method="GET" class="mt-8 sm:flex sm:items-center sm:justify-between">
 
                 <div class="hidden sm:flex sm:gap-4">
                     <div class="relative"> {{-- Availability --}}
@@ -46,7 +49,7 @@
                                     <ul class="space-y-1 border-t border-gray-200 p-4">
                                         <li>
                                             <label for="FilterInStock" class="inline-flex items-center gap-2">
-                                                <input type="checkbox" id="FilterInStock"
+                                                <input type="checkbox" id="in_stock" name="in_stock"
                                                     class="h-5 w-5 rounded border-gray-300" />
 
                                                 <span class="text-sm font-medium text-gray-700"> In Stock ({{$counts[0]}}) </span>
@@ -55,7 +58,7 @@
 
                                         <li>
                                             <label for="FilterOutOfStock" class="inline-flex items-center gap-2">
-                                                <input type="checkbox" id="FilterOutOfStock"
+                                                <input type="checkbox" id="out_stock" name="out_stock"
                                                     class="h-5 w-5 rounded border-gray-300" />
 
                                                 <span class="text-sm font-medium text-gray-700"> Out of Stock ({{$counts[1]}}) </span>
@@ -98,14 +101,14 @@
                                             <label for="FilterPriceFrom" class="flex items-center gap-2">
                                                 <span class="text-sm text-gray-600">$</span>
 
-                                                <input type="number" id="FilterPriceFrom" placeholder="From"
+                                                <input type="number" id="min_price" name="min_price" placeholder="From"
                                                     class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
                                             </label>
 
                                             <label for="FilterPriceTo" class="flex items-center gap-2">
                                                 <span class="text-sm text-gray-600">$</span>
 
-                                                <input type="number" id="FilterPriceTo" placeholder="To"
+                                                <input type="number" id="max_price" name="max_price" placeholder="To"
                                                     class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
                                             </label>
                                         </div>
@@ -127,7 +130,9 @@
                         <option value="Price, ASC">Price, ASC</option>
                     </select>
                 </div>
-            </div>
+
+                <button type="submit" class="text-white px-4 py-3 bg-gray-300/20">Click</button>
+            </form>
 
             <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 
@@ -164,4 +169,6 @@
             </ul>
         </div>
     </section>
+
+    <script src="../js/shop_checkboxes.js"></script>
 @endsection
