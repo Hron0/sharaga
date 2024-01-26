@@ -1,0 +1,37 @@
+[
+    {
+        "name": "IBANEZ RG7421",
+        "description": "7-string beast",
+        "price": "56000",
+        "available": true,
+        "image": "initial_prj/resources/images/ibanez1.png"
+    },
+    {
+        "name": "IBANEZ RG8",
+        "description": "7-string beast",
+        "price": "63000",
+        "available": true,
+        "image": "initial_prj/resources/images/ibanez2.png"
+    },
+    {
+        "name": "IBANEZ RGD71",
+        "description": "7-string beast",
+        "price": "157000",
+        "available": true,
+        "image": "initial_prj/resources/images/ibanez3.png"
+    },
+    {
+        "name": "JACKSON JS32",
+        "description": "7-string beast",
+        "price": "89000",
+        "available": true,
+        "image": "initial_prj/resources/images/jack4.png"
+    },
+    {
+        "name": "ICTB721",
+        "description": "7-string beast",
+        "price": "138000",
+        "available": true,
+        "image": "initial_prj/resources/images/ictb5.png"
+    }
+]
