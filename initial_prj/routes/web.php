@@ -18,5 +18,5 @@ Route::get('/calc', [CalcController::class, 'showCalc'])->name('calc');
 Route::post('/calc', [CalcController::class, 'calculate']);
 
 Route::get('/example', [ExampleController::class, 'showPage'])->name('example');
-Route::get('/example', [ShopController::class, 'showPage'])->name('shop');
-Route::get('/example', [BasketController::class, 'showPage'])->name('basket');
+Route::get('/shop', [ShopController::class, 'showPage'])->name('shop');
+Route::get('/basket', [BasketController::class, 'showPage'])->name('basket');

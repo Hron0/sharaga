@@ -99,7 +99,7 @@
         </div>
     </header>
 
-    <div class="relative z-10 mx-10 2xl:mx-16">
+    <div class="relative z-10 mx-10 2xl:mx-16 h-screen">
        @yield('body') 
     </div>
     
