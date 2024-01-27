@@ -38,7 +38,8 @@
                                     <header class="flex items-center justify-between p-4">
                                         <span class="text-sm text-gray-700"> 0 Selected </span>
 
-                                        <button type="button" id="no_fltr" class="text-sm text-gray-900 underline underline-offset-4">
+                                        <button type="button" id="no_fltr"
+                                            class="text-sm text-gray-900 underline underline-offset-4">
                                             Все товары
                                         </button>
                                     </header>
@@ -49,7 +50,8 @@
                                                 <input type="checkbox" id="in_stock" name="in_stock" value="1"
                                                     class="h-5 w-5 rounded border-gray-300 out_stock" />
 
-                                                <span class="text-sm font-medium text-gray-700"> In Stock ({{$counts[0]}}) </span>
+                                                <span class="text-sm font-medium text-gray-700"> In Stock
+                                                    ({{ $counts[0] }}) </span>
                                             </label>
                                         </li>
 
@@ -58,7 +60,8 @@
                                                 <input type="checkbox" id="out_stock" name="in_stock" value="0"
                                                     class="h-5 w-5 rounded border-gray-300 out_stock" />
 
-                                                <span class="text-sm font-medium text-gray-700"> Out of Stock ({{$counts[1]}}) </span>
+                                                <span class="text-sm font-medium text-gray-700"> Out of Stock
+                                                    ({{ $counts[1] }}) </span>
                                             </label>
                                         </li>
                                     </ul>
@@ -86,7 +89,8 @@
                                 class="z-50 group-open:absolute group-open:top-auto group-open:mt-2 ltr:group-open:start-0">
                                 <div class="w-96 rounded border border-gray-200 bg-white">
                                     <header class="flex items-center justify-between p-4">
-                                        <span class="text-sm text-gray-700"> The highest price is ${{$counts[2]}} </span>
+                                        <span class="text-sm text-gray-700"> The highest price is ${{ $counts[2] }}
+                                        </span>
 
                                         <button type="button" class="text-sm text-gray-900 underline underline-offset-4">
                                             Reset
