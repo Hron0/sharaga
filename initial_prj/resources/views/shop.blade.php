@@ -135,6 +135,12 @@
                 <button type="submit" class="text-white px-4 py-3 bg-gray-300/20">Click</button>
             </form>
 
+            <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Default
+                range</label>
+            <input id="default-range" type="range" value="50"
+                class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+
+
             <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"> {{-- Products --}}
 
                 @foreach ($filteredProducts as $guitar)
@@ -171,5 +177,5 @@
         </div>
     </section>
 
-    <script src="{{ asset('js/shop1_checkboxes.js') }}"></script>
+    <script src="{{ asset('js/shop_checkboxes.js') }}"></script>
 @endsection

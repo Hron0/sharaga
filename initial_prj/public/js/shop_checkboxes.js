@@ -25,7 +25,7 @@ window.onload = function () {
     inStockCheckbox.checked = false
 
     console.log("BLACKKCCKASDA")
-    
+
     form.submit()
   }
 
@@ -33,6 +33,15 @@ window.onload = function () {
   inStockCheckbox.addEventListener('change', toggleFirst);
   outStockCheckbox.addEventListener('change', toggleSecond);
   resetBtn.addEventListener('click', resetFilters);
+
+  console.log("Slider connected")
+  const slider = document.getElementById('default-range')
+
+  const fncSlider = () => {
+    console.log(slider.value)
+  }
+
+  slider.addEventListener('change', fncSlider)
 }
 
 
