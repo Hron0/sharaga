@@ -140,40 +140,47 @@
             <input id="default-range" type="range" value="50"
                 class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
 
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    @foreach ($errors->all() as $error)
+                        <p class="text-center text-white font-bold font-Inter text-xl">{{ $error }}</p>
+                    @endforeach
+                </div>
+            @else
+                <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"> {{-- Products --}}
 
-            <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"> {{-- Products --}}
+                    @foreach ($filteredProducts as $guitar)
+                        <li>
+                            <a href="#" class="flex flex-col gap-2 overflow-hidden">
+                                <img src="{{ asset($guitar->image) }}" alt=""
+                                    class="h-[350px] w-full object-scale-down transition duration-500 group-hover:scale-105 sm:h-[450px]" />
 
-                @foreach ($filteredProducts as $guitar)
-                    <li>
-                        <a href="#" class="flex flex-col gap-2 overflow-hidden">
-                            <img src="{{ asset($guitar->image) }}" alt=""
-                                class="h-[350px] w-full object-scale-down transition duration-500 group-hover:scale-105 sm:h-[450px]" />
+                                <div class="relative bg-gray-300/20 pt-3 px-3 pb-2 rounded-md">
+                                    <h3
+                                        class="text-xs text-gray-100 flex flex-row justify-between group-hover:underline group-hover:underline-offset-4">
+                                        <span>{{ $guitar->name }}</span>
+                                        <span>
+                                            @if ($guitar->available == 1)
+                                                Available
+                                            @else
+                                                Not-Available
+                                            @endif
+                                        </span>
+                                    </h3>
 
-                            <div class="relative bg-gray-300/20 pt-3 px-3 pb-2 rounded-md">
-                                <h3
-                                    class="text-xs text-gray-100 flex flex-row justify-between group-hover:underline group-hover:underline-offset-4">
-                                    <span>{{ $guitar->name }}</span>
-                                    <span>
-                                        @if ($guitar->available == 1)
-                                            Available
-                                        @else
-                                            Not-Available
-                                        @endif
-                                    </span>
-                                </h3>
+                                    <p class="mt-2">
+                                        <span class="sr-only"> </span>
 
-                                <p class="mt-2">
-                                    <span class="sr-only"> </span>
+                                        <span class="tracking-wider text-gray-200"> {{ $guitar->price }} </span>
+                                    </p>
+                                </div>
+                            </a>
 
-                                    <span class="tracking-wider text-gray-200"> {{ $guitar->price }} </span>
-                                </p>
-                            </div>
-                        </a>
+                        </li>
+                    @endforeach
 
-                    </li>
-                @endforeach
-
-            </ul>
+                </ul>
+            @endif
         </div>
     </section>
 

@@ -53,6 +53,9 @@ class ShopController extends Controller
 
         $filteredProducts = $products->get();
 
+        if ($filteredProducts->count() === 0) {
+            return redirect()->back()->withErrors(['error' => 'No products found for the selected filters.']);
+        }
 
         return view('shop', compact('filteredProducts', 'counts'));
     }
