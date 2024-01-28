@@ -91,7 +91,7 @@
                                 class="z-50 group-open:absolute group-open:top-auto group-open:mt-2 ltr:group-open:start-0">
                                 <div class="w-96 rounded border border-gray-200 bg-white">
                                     <header class="flex items-center justify-between p-4">
-                                        <span class="text-sm text-gray-700"> The highest price is ${{ $counts[2] }}
+                                        <span class="text-sm text-gray-700"> The highest price is ${{ $counts[3] }}
                                         </span>
 
                                         <button type="button" class="text-sm text-gray-900 underline underline-offset-4">
@@ -104,7 +104,7 @@
                                             <label for="FilterPriceFrom" class="flex items-center gap-2">
                                                 <span class="text-sm text-gray-600">$</span>
 
-                                                <input type="number" id="min_price" name="min_price" placeholder="From"
+                                                <input type="number" id="min_price" name="min_price" placeholder="{{$counts[2]}}"
                                                     @if (isset($filters['min_price'])) value="{{$filters['min_price']}}" @endif
                                                     class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
                                             </label>
@@ -112,7 +112,7 @@
                                             <label for="FilterPriceTo" class="flex items-center gap-2">
                                                 <span class="text-sm text-gray-600">$</span>
 
-                                                <input type="number" id="max_price" name="max_price" placeholder="To"
+                                                <input type="number" id="max_price" name="max_price" placeholder="{{$counts[3]}}"
                                                 @if (isset($filters['max_price'])) value="{{$filters['max_price']}}" @endif
                                                     class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
                                             </label>

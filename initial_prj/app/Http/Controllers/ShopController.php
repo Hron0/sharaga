@@ -28,6 +28,7 @@ class ShopController extends Controller
         $counts = [
             Guitars::where('available', true)->count(),
             Guitars::where('available', false)->count(),
+            Guitars::min('price'),
             Guitars::max('price'),
         ];
 
