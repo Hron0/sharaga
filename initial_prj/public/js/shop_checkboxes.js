@@ -19,6 +19,9 @@ window.onload = function () {
 
 
   //Reset Availability-filter
+  const outStockCheckbox = document.getElementById('out_stock')
+  const inStockCheckbox = document.getElementById('in_stock')
+
   function resetFilters() {
     outStockCheckbox.checked = false
     inStockCheckbox.checked = false
