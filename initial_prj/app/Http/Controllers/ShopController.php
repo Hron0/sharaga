@@ -23,7 +23,7 @@ class ShopController extends Controller
 
     public function filteredPage(Request $request)
     {
-
+        $filters = $request->query();
         $products = Guitars::query();
         $counts = [
             Guitars::where('available', true)->count(),
@@ -57,6 +57,6 @@ class ShopController extends Controller
             return redirect()->back()->withErrors(['error' => 'No products found for the selected filters.']);
         }
 
-        return view('shop', compact('filteredProducts', 'counts'));
+        return view('shop', compact('filteredProducts', 'counts', 'filters'));
     }
 }

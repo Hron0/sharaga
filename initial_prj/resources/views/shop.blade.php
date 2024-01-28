@@ -48,6 +48,7 @@
                                         <li>
                                             <label for="FilterInStock" class="inline-flex items-center gap-2">
                                                 <input type="checkbox" id="in_stock" name="in_stock" value="1"
+                                                    @if (isset($filters['in_stock']) && $filters['in_stock'] === '1') checked @endif
                                                     class="h-5 w-5 rounded border-gray-300 out_stock" />
 
                                                 <span class="text-sm font-medium text-gray-700"> In Stock
@@ -58,6 +59,7 @@
                                         <li>
                                             <label for="FilterOutOfStock" class="inline-flex items-center gap-2">
                                                 <input type="checkbox" id="out_stock" name="in_stock" value="0"
+                                                    @if (isset($filters['in_stock']) && $filters['in_stock'] === '0') checked @endif
                                                     class="h-5 w-5 rounded border-gray-300 out_stock" />
 
                                                 <span class="text-sm font-medium text-gray-700"> Out of Stock
@@ -103,6 +105,7 @@
                                                 <span class="text-sm text-gray-600">$</span>
 
                                                 <input type="number" id="min_price" name="min_price" placeholder="From"
+                                                    @if (isset($filters['min_price'])) value="{{$filters['min_price']}}" @endif
                                                     class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
                                             </label>
 
@@ -110,6 +113,7 @@
                                                 <span class="text-sm text-gray-600">$</span>
 
                                                 <input type="number" id="max_price" name="max_price" placeholder="To"
+                                                @if (isset($filters['max_price'])) value="{{$filters['max_price']}}" @endif
                                                     class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
                                             </label>
                                         </div>
