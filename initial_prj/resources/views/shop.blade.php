@@ -132,7 +132,6 @@
                     </select>
                 </div>
 
-                <button type="submit" class="text-white px-4 py-3 bg-gray-300/20">Click</button>
             </form>
 
             <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Default
@@ -185,4 +184,5 @@
     </section>
 
     <script src="{{ asset('js/shop_checkboxes.js') }}"></script>
+    <script src="{{ asset('js/filter_auto.js') }}"></script>
 @endsection
