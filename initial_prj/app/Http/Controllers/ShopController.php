@@ -34,10 +34,14 @@ class ShopController extends Controller
 
 
         if ($request->has('min_price') && $request->has('max_price')) {
-            if (!$request->input('min_price') == "" && !$request->input('max_price') == "") {
-                $products->whereBetween('price', [$request->min_price, $request->max_price]);
-            }
+            $products->whereBetween('price', [
+                $request->input('min_price') == "" ? 0 : $request->min_price,
+                $request->input('max_price') == "" ? 0 : $request->max_price
+            ]);
         }
+
+
+
 
 
         if ($request->has('in_stock')) {
