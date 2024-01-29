@@ -16,7 +16,7 @@
 
 <body class="bg-center h-screen w-screen dots bg-gray-900 overflow-x-hidden flex flex-col gap-10">
 
-    <header class="bg-white dark:bg-gray-900 z-10 relative">
+    <header class="bg-gray-900 z-10 relative">
         <div class="mx-auto w-screen px-4 sm:px-6 lg:px-52">
             <div class="flex h-16 items-center justify-between">
                 <div class="md:flex md:items-center md:gap-12">
