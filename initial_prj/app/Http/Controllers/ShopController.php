@@ -28,40 +28,49 @@ class ShopController extends Controller
         $counts = [
             Guitars::where('available', true)->count(),
             Guitars::where('available', false)->count(),
+        ];
+
+        $edge_prices = [
             Guitars::min('price'),
             Guitars::max('price'),
         ];
 
+        $dog_fuck = ['min_price', 'max_price'];
 
-        if ($request->has('min_price') && $request->has('max_price')) {
-            $products->whereBetween('price', [
-                $request->input('min_price') == "" ? 0 : $request->min_price,
-                $request->input('max_price') == "" ? 0 : $request->max_price
-            ]);
+        if ($request->has('min_price')) {
+            if (is_null($request->input("min_price"))) {
+                $request->remove($dog_fuck);
+            }
         }
 
-
-
-
+/*         if ($request->has('min_price') && $request->has('max_price')) {
+            $products->whereBetween('price', [
+                $request->min_price == "" ? "" : $request->min_price,
+                $request->max_price == "" ? "" : $request->max_price
+            ]);
+        } */
 
         if ($request->has('in_stock')) {
             if ($request->input("in_stock") == 1) {
                 $products->where('available', $request->in_stock);
             } elseif ($request->input("in_stock") == 0) {
                 $products->where('available', $request->in_stock);
-            } elseif ($request->input("in_stock") == 0 && $request->input("in_stock") == 1) {
-                return redirect()->back()->withInput(['except' => ["in_stock"]]);
             }
         } else {
             $products->whereNotNull("available");
         }
+
 
         $filteredProducts = $products->get();
 
         if ($filteredProducts->count() === 0) {
             return redirect()->back()->withErrors(['error' => 'No products found for the selected filters.']);
         }
-
-        return view('shop', compact('filteredProducts', 'counts', 'filters'));
+        return view('shop', compact('filteredProducts', 'counts', 'filters', 'edge_prices'));
     }
 }
+
+//TODO: Почему-то форма отправляет пустые поля min_price & max_price даже если их не выбераешь,
+//      УБИТЬ НАСМЕРТЬ поля min_price & max_price если они пустые
+//      Когда клиент делает фильтрация по чему-то кроме цены, у него в фильтре ценников
+//      Автоматом будет ставиться Макс и Мин цены среди отфильтрованных итемов.
