@@ -35,13 +35,13 @@ class ShopController extends Controller
             Guitars::max('price'),
         ];
 
-        $dog_fuck = ['min_price', 'max_price'];
+/*         $dog_fuck = ['min_price', 'max_price'];
 
         if ($request->has('min_price')) {
             if (is_null($request->input("min_price"))) {
                 $request->remove($dog_fuck);
             }
-        }
+        } */
 
 /*         if ($request->has('min_price') && $request->has('max_price')) {
             $products->whereBetween('price', [
