@@ -151,7 +151,7 @@
 
                     @foreach ($filteredProducts as $guitar)
                         <li>
-                            <a href="#" class="flex flex-col gap-2 overflow-hidden">
+                            <a href="{{route('productPage', $guitar->id)}}" class="flex flex-col gap-2 overflow-hidden">
                                 <img src="{{ asset($guitar->image) }}" alt=""
                                     class="h-[350px] w-full object-scale-down transition duration-500 group-hover:scale-105 sm:h-[450px]" />
 
@@ -160,11 +160,7 @@
                                         class="text-xs text-gray-100 flex flex-row justify-between group-hover:underline group-hover:underline-offset-4">
                                         <span>{{ $guitar->name }}</span>
                                         <span>
-                                            @if ($guitar->available == 1)
-                                                Available
-                                            @else
-                                                Not-Available
-                                            @endif
+                                            {{($guitar->available == 1) ? 'Available' : 'Not-Available'}}
                                         </span>
                                     </h3>
 
