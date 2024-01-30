@@ -5,6 +5,7 @@ use App\Http\Controllers\CalcController;
 use App\Http\Controllers\ExampleController;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\BasketController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 
 Route::get('/welcome', function () {
@@ -23,3 +24,8 @@ Route::get('/shop', [ShopController::class, 'filteredPage'])->name('shop');
 Route::get('/basket', [BasketController::class, 'showPage'])->name('basket');
 
 Route::get('/product/{id}', [ProductController::class, 'show'])->name('productPage');
+
+Route::get('/auth/login', [LoginController::class, 'showPage'])->name('login');
+
+Route::get('/auth/register', [BasketController::class, 'showPage'])->name('register');
+Route::post('/auth/register', [BasketController::class, 'register']);
