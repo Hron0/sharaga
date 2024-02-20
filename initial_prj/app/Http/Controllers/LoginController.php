@@ -19,15 +19,14 @@ class LoginController extends Controller
             'password' => 'required'
         ]);
 
-        if (Auth::attempt($credentials)) {
-            $req->session()->regenerate();
-            return redirect()->route('shop')
-                ->withSuccess('You have successfully logged in!');
+        if (Auth::attempt(['email' => $req->email, 'password' => $req->password])) {
+            return redirect()->route('shop');
+        } else {
+            return response()->json([
+                'email' => '',
+                'password' => 'неверный логин или пароль'
+            ], 400);
         }
-
-        return back()->withErrors([
-            'error' => 'Either password or email is wrong. Bozo',
-        ])->onlyInput('email');
     }
 
     public function logout(Request $req)
@@ -37,5 +36,5 @@ class LoginController extends Controller
         $req->session()->regenerateToken();
         return redirect()->route('login')
             ->withSuccess('Logged out');;
-    }  
+    }
 }

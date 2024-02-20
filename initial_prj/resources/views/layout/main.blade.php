@@ -10,7 +10,9 @@
     <style>
         .dots {
             background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E")
-        };
+        }
+
+        ;
     </style>
 </head>
 
@@ -35,33 +37,33 @@
                         <ul class="flex items-center gap-16 text-sm">
                             <li>
                                 <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{route('home')}}">
+                                    href="{{ route('home') }}">
                                     Главная
                                 </a>
                             </li>
 
                             <li>
                                 <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{route('welcome')}}">
+                                    href="{{ route('welcome') }}">
                                     Laravel Welcome
                                 </a>
                             </li>
 
                             <li>
                                 <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{route('calc')}}">
+                                    href="{{ route('calc') }}">
                                     Калькулятор Кв. Ур
                                 </a>
                             </li>
                             <li>
                                 <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{route('shop')}}">
+                                    href="{{ route('shop') }}">
                                     Каталог
                                 </a>
                             </li>
                             <li>
                                 <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{route('basket')}}">
+                                    href="{{ route('basket') }}">
                                     Корзина
                                 </a>
                             </li>
@@ -70,20 +72,42 @@
                     </nav>
                 </div>
 
-                <div class="flex items-center gap-4">
-                    <div class="sm:flex sm:gap-4">
-                        <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-teal-500"
-                            href="{{route('login')}}">
-                            Login
-                        </a>
-
-                        <div class="hidden sm:flex">
-                            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
-                                href="{{route('register')}}">
-                                Register
+                @guest
+                    <div class="flex items-center gap-4">
+                        <div class="sm:flex sm:gap-4">
+                            <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-teal-500"
+                                href="{{ route('login') }}">
+                                Login
                             </a>
+
+                            <div class="hidden sm:flex">
+                                <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                                    href="{{ route('register') }}">
+                                    Register
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    @endguest
+
+                    @auth
+                        @if (Auth::user()->is_admin == 0)
+                            <div>
+                                <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                                    href="{{ route('register') }}">
+                                    Корзина
+                                </a>
+                                <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                                    href="{{ route('logout') }}">
+                                    Выход
+                                </a>
+                            </div>
+                        @else
+                            <div>
+                                <a href="{{ route('admin') }}" class="btn btn-info">Админ панель</a>
+                                <a href="{{ route('logout') }}" class="btn btn-outline-info text-dark">Выход</a>
+                            </div>
+                        @endif
+                    @endauth
 
                     <div class="block md:hidden">
                         <button
@@ -100,9 +124,9 @@
     </header>
 
     <div class="relative z-10 mx-10 2xl:mx-16 h-screen">
-       @yield('body') 
+        @yield('body')
     </div>
-    
+
 </body>
 
 </html>

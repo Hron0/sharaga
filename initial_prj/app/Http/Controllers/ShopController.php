@@ -7,20 +7,6 @@ use App\Models\Guitars;
 
 class ShopController extends Controller
 {
-    public function initialPage(Request $request)
-    {
-        $products = Guitars::query();
-        $filteredProducts = $products->get();
-
-        $counts = [
-            Guitars::where('available', true)->count(),
-            Guitars::where('available', false)->count(),
-            Guitars::max('price'),
-        ];
-
-        return view('shop', compact('filteredProducts', 'counts'));
-    }
-
     public function filteredPage(Request $request)
     {
         $filters = $request->query();
@@ -35,20 +21,16 @@ class ShopController extends Controller
             Guitars::max('price'),
         ];
 
-/*         $dog_fuck = ['min_price', 'max_price'];
+        $minPrice = $request->input('min_price');
+        $maxPrice = $request->input('max_price');
 
-        if ($request->has('min_price')) {
-            if (is_null($request->input("min_price"))) {
-                $request->remove($dog_fuck);
-            }
-        } */
-
-/*         if ($request->has('min_price') && $request->has('max_price')) {
-            $products->whereBetween('price', [
-                $request->min_price == "" ? "" : $request->min_price,
-                $request->max_price == "" ? "" : $request->max_price
-            ]);
-        } */
+        if ($minPrice && $maxPrice) {
+            $products->whereBetween('price', [$minPrice, $maxPrice]);
+        } elseif ($minPrice) {
+            $products->where('price', '>=', $minPrice);
+        } elseif ($maxPrice) {
+            $products->where('price', '<=', $maxPrice);
+        }
 
         if ($request->has('in_stock')) {
             if ($request->input("in_stock") == 1) {
@@ -66,7 +48,7 @@ class ShopController extends Controller
         if ($filteredProducts->count() === 0) {
             return redirect()->back()->withErrors(['error' => 'No products found for the selected filters.']);
         }
-        return view('shop', compact('filteredProducts', 'counts', 'filters', 'edge_prices'));
+        return view('shop', compact('filteredProducts', 'counts', 'filters', 'edge_prices', 'minPrice', 'maxPrice'));
     }
 }
 

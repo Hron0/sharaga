@@ -12,13 +12,6 @@ use Illuminate\Support\Facades\Validator;
 class RegisterController extends Controller
 {
 
-/*     public function __construct()
-    {
-        $this->middleware('guest')->except([
-            'logout', 'dashboard'
-        ]);
-    } */
-
 
     public function showPage()
     {
@@ -28,14 +21,13 @@ class RegisterController extends Controller
     public function register(Request $req)
     {
         $validator = Validator::make($req->all(), [
-            'name' => 'required|string|max:250',
+            'name' => 'required|string|max:25',
             'email' => 'required|email|max:250|unique:users',
-            'password' => 'required|min:8|confirmed'
+            'password' => 'string|required|min:6',
         ]);
-    
+
         if ($validator->fails()) {
-            return redirect('/register')
-                ->withErrors($validator);
+            return response()->json($validator->errors(), 400);
         }
 
         User::create([
@@ -44,10 +36,6 @@ class RegisterController extends Controller
             'password' => Hash::make($req->password)
         ]);
 
-        $credentials = $req->only('email', 'password');
-        Auth::attempt($credentials);
-        $req->session()->regenerate();
-        return redirect()->route('shop')
-            ->withSuccess('You have successfully registered & logged in!');
+        return redirect()->route('login');
     }
 }

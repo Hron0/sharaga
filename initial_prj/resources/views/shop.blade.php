@@ -104,15 +104,20 @@
                                             <label for="FilterPriceFrom" class="flex items-center gap-2">
                                                 <span class="text-sm text-gray-600">$</span>
 
-                                                <input type="number" id="min_price" name="min_price" placeholder="{{$edge_prices[0]}}"
-                                                    class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
+                                                <input type="number" id="min_price" name="min_price"
+                                                    placeholder="{{ $edge_prices[0] }}"
+                                                    class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm py-2 px-1"
+                                                    value="{{ $minPrice ?? '' }}" />
+
                                             </label>
 
                                             <label for="FilterPriceTo" class="flex items-center gap-2">
                                                 <span class="text-sm text-gray-600">$</span>
 
-                                                <input type="number" id="max_price" name="max_price" placeholder="{{$edge_prices[1]}}"
-                                                    class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
+                                                <input type="number" id="max_price" name="max_price"
+                                                    placeholder="{{ $edge_prices[1] }}"
+                                                    class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm py-2"
+                                                    value="{{ $maxPrice ?? '' }}" />
                                             </label>
                                         </div>
                                     </div>
@@ -151,7 +156,7 @@
 
                     @foreach ($filteredProducts as $guitar)
                         <li>
-                            <a href="{{route('productPage', $guitar->id)}}" class="flex flex-col gap-2 overflow-hidden">
+                            <a href="{{ route('productPage', $guitar->id) }}" class="flex flex-col gap-2 overflow-hidden">
                                 <img src="{{ asset($guitar->image) }}" alt=""
                                     class="h-[350px] w-full object-scale-down transition duration-500 group-hover:scale-105 sm:h-[450px]" />
 
@@ -160,7 +165,7 @@
                                         class="text-xs text-gray-100 flex flex-row justify-between group-hover:underline group-hover:underline-offset-4">
                                         <span>{{ $guitar->name }}</span>
                                         <span>
-                                            {{($guitar->available == 1) ? 'Available' : 'Not-Available'}}
+                                            {{ $guitar->available == 1 ? 'Available' : 'Not-Available' }}
                                         </span>
                                     </h3>
 
