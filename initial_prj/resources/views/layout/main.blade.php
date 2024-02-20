@@ -10,7 +10,36 @@
     <style>
         .dots {
             background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E")
-        };
+        }
+
+        ;
+    </style>
+    <style>
+        .carousel-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .carousel-item {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+
+        .carousel-controls {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+        }
     </style>
 </head>
 
@@ -35,34 +64,46 @@
                         <ul class="flex items-center gap-16 text-sm">
                             <li>
                                 <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{route('home')}}">
+                                    href="{{ route('home') }}">
                                     Главная
                                 </a>
                             </li>
 
                             <li>
                                 <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{route('welcome')}}">
+                                    href="{{ route('welcome') }}">
                                     Laravel Welcome
                                 </a>
                             </li>
 
                             <li>
                                 <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{route('calc')}}">
+                                    href="{{ route('calc') }}">
                                     Калькулятор Кв. Ур
                                 </a>
                             </li>
                             <li>
                                 <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{route('shop')}}">
+                                    href="{{ route('shop') }}">
                                     Каталог
                                 </a>
                             </li>
                             <li>
                                 <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{route('basket')}}">
+                                    href="{{ route('basket') }}">
                                     Корзина
+                                </a>
+                            </li>
+                            <li>
+                                <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
+                                    href="{{ route('about') }}">
+                                    О нас
+                                </a>
+                            </li>
+                            <li>
+                                <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
+                                    href="{{ route('location') }}">
+                                    Где нас найти
                                 </a>
                             </li>
 
@@ -73,13 +114,13 @@
                 <div class="flex items-center gap-4">
                     <div class="sm:flex sm:gap-4">
                         <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-teal-500"
-                            href="{{route('login')}}">
+                            href="{{ route('login') }}">
                             Login
                         </a>
 
                         <div class="hidden sm:flex">
                             <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
-                                href="{{route('register')}}">
+                                href="{{ route('register') }}">
                                 Register
                             </a>
                         </div>
@@ -100,9 +141,9 @@
     </header>
 
     <div class="relative z-10 mx-10 2xl:mx-16 h-screen">
-       @yield('body') 
+        @yield('body')
     </div>
-    
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CalcController;
 use App\Http\Controllers\ExampleController;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\BasketController;
+use App\Http\Controllers\LocationController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 
@@ -22,6 +24,8 @@ Route::post('/calc', [CalcController::class, 'calculate']);
 Route::get('/example', [ExampleController::class, 'showPage'])->name('example');
 Route::get('/shop', [ShopController::class, 'filteredPage'])->name('shop');
 Route::get('/basket', [BasketController::class, 'showPage'])->name('basket');
+Route::get('/about', [AboutController::class, 'showPage'])->name('about');
+Route::get('/location', [LocationController::class, 'showPage'])->name('location');
 
 Route::get('/product/{id}', [ProductController::class, 'show'])->name('productPage');
 
