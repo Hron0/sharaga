@@ -33,7 +33,8 @@
                     </div>
                 </div>
                 <div class="w-full px-4 md:w-1/2 ">
-                    <div class="lg:pl-20">
+                    <form class="lg:pl-20" action="{{ route('add', $product) }}" method="POST">
+                        @csrf
                         <div class="mb-8 "> {{-- Product info --}}
                             <h2 class="max-w-xl mb-6 text-2xl font-bold dark:text-gray-400 md:text-4xl">
                                 {{$product->name}}</h2>
@@ -53,31 +54,29 @@
                             <label for=""
                                 class="w-full pb-1 text-xl font-semibold text-gray-700 border-b border-purple-300 dark:border-gray-600 dark:text-gray-400">Quantity</label>
                             <div class="relative flex flex-row w-full h-10 mt-6 bg-transparent rounded-lg">
-                                <button
+                                <button id="decr" type="button"
                                     class="w-20 h-full text-gray-600 bg-gray-300 rounded-l outline-none cursor-pointer dark:hover:bg-gray-700 dark:text-gray-400 hover:text-gray-700 dark:bg-gray-900 hover:bg-gray-400">
                                     <span class="m-auto text-2xl font-thin">-</span>
                                 </button>
-                                <input type="number"
+                                <input type="number" id="quantity" name="quantity"
                                     class="flex items-center w-full font-semibold text-center text-gray-700 placeholder-gray-700 bg-gray-300 outline-none dark:text-gray-400 dark:placeholder-gray-400 dark:bg-gray-900 focus:outline-none text-md hover:text-black"
-                                    placeholder="1">
-                                <button
+                                    value="1">
+                                <button id="incr" type="button"
                                     class="w-20 h-full text-gray-600 bg-gray-300 rounded-r outline-none cursor-pointer dark:hover:bg-gray-700 dark:text-gray-400 dark:bg-gray-900 hover:text-gray-700 hover:bg-gray-400">
                                     <span class="m-auto text-2xl font-thin">+</span>
                                 </button>
                             </div>
                         </div>
                         <div class="flex flex-wrap items-center gap-4">
-                            <button
+                            <button type="submit"
                                 class="w-full p-4 bg-purple-500 rounded-md lg:w-2/5 dark:text-gray-200 text-gray-50 hover:bg-purple-600 dark:bg-purple-500 dark:hover:bg-purple-700">
                                 Add to cart</button>
-                            <button
-                                class="flex items-center justify-center w-full p-4 text-purple-500 border border-purple-500 rounded-md lg:w-2/5 dark:text-gray-200 dark:border-purple-600 hover:bg-purple-600 hover:border-purple-600 hover:text-gray-100 dark:bg-purple-500 dark:hover:bg-purple-700 dark:hover:border-purple-700 dark:hover:text-gray-300">
-                                Buy Now
-                            </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="{{ asset('js/product_quantity.js') }}"></script>
 @endsection

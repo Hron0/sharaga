@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CalcController;
 use App\Http\Controllers\ExampleController;
 use App\Http\Controllers\ShopController;
-use App\Http\Controllers\BasketController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RegisterController;
@@ -35,5 +35,6 @@ Route::middleware(['guest'])->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/basket', [BasketController::class, 'showPage'])->name('basket');
+    Route::get('/cart', [CartController::class, 'show'])->name('cart');
+    Route::post('/cart/add/{product}', [CartController::class, 'add'])->name('add');
 });
