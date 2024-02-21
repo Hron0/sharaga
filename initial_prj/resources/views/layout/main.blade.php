@@ -61,12 +61,6 @@
                                     Каталог
                                 </a>
                             </li>
-                            <li>
-                                <a class="transition text-lg font-TechMono text-white hover:text-white/75 font-semibold"
-                                    href="{{ route('basket') }}">
-                                    Корзина
-                                </a>
-                            </li>
 
                         </ul>
                     </nav>
@@ -93,7 +87,7 @@
                         @if (Auth::user()->is_admin == 0)
                             <div>
                                 <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
-                                    href="{{ route('register') }}">
+                                    href="{{ route('cart') }}">
                                     Корзина
                                 </a>
                                 <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
